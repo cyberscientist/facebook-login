@@ -1,4 +1,4 @@
-package com.facebook.login;
+package com.social.login;
 
 import java.text.DateFormat;
 import java.util.Date;
