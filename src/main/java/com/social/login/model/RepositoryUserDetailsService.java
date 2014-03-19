@@ -3,7 +3,9 @@ package com.social.login.model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
 import com.social.login.model.UserDetails;
+import com.social.login.user.repository.UserRepository;
 
 public class RepositoryUserDetailsService implements UserDetailsService {
 
@@ -16,7 +18,7 @@ public class RepositoryUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UserDetails user = repository.findByEmail(username);
+        User user = repository.findByEmail(username);
 
         if (user == null) {
             throw new UsernameNotFoundException("No user found with username: " + username);

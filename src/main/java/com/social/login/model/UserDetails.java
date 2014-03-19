@@ -4,7 +4,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.springframework.context.annotation.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.social.security.SocialUser;
@@ -105,6 +104,10 @@ public class UserDetails extends SocialUser {
         }
     }
 
+    public static Builder getBuilder() {
+    	return new Builder();
+    }
+    
 	public Long getId() {
 		return id;
 	}
