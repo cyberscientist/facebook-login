@@ -20,8 +20,8 @@ public class LBLApplicationConfig implements WebApplicationInitializer {
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        //If you want to use the XML configuration, comment the following two lines out.
-        AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
+
+    	AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
         rootContext.register(LBLApplicationContext.class);
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet(DISPATCHER_SERVLET_NAME, new DispatcherServlet(rootContext));
         dispatcher.setLoadOnStartup(1);

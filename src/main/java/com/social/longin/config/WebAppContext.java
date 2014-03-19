@@ -17,7 +17,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 @ComponentScan (basePackages = {
 		"com.social.login.common.controller",
-		"com.social.login.security.controller",
+		"com.social.login.security",
 		"com.social.login.user.controller"
 		
 })
