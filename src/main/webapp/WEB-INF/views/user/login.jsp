@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="page-header">
-    <h1><spring:message code="label.user.login.page.title"/></h1>
+login page
 </div>
 <!--
     If the user is anonymous (not logged in), show the login form
@@ -20,7 +20,7 @@
     <!-- Login form -->
     <div class="panel panel-default">
         <div class="panel-body">
-<%--             <h2><spring:message code="label.login.form.title"/></h2> --%>
+            <h2><spring:message code="label.login.form.title"/></h2>
             <h2>Error Message</h2>
             <!--
                 Error message is shown if login fails.

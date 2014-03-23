@@ -1,4 +1,4 @@
-package com.social.longin.config;
+package com.social.login.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.*;
@@ -7,7 +7,7 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "net.petrikainulainen.spring.social.signinmvc.user.service"
+        "com.social.login.user.service"
 })
 @Import({WebAppContext.class, PersistenceContext.class, SecurityContext.class, SocialContext.class})
 @PropertySource("classpath:application.properties")

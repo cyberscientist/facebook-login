@@ -1,4 +1,4 @@
-package com.social.longin.config;
+package com.social.login.config;
 
 import com.jolbox.bonecp.BoneCPDataSource;
 import org.springframework.context.annotation.Bean;

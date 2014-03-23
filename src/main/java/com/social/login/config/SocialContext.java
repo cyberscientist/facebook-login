@@ -1,4 +1,4 @@
-package com.social.longin.config;
+package com.social.login.config;
 
 import javax.sql.DataSource;
 

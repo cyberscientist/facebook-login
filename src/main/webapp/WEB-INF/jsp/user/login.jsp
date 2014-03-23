@@ -10,16 +10,16 @@
 </head>
 <body>
 <div class="page-header">
-    <h1><spring:message code="label.user.login.page.title"/></h1>
+    <h1>LOGIN!</h1>
 </div>
 <sec:authorize access="isAnonymous()">
     <div class="panel panel-default">
         <div class="panel-body">
-            <h2><spring:message code="label.login.form.title"/></h2>
+            <h2>Login form</h2>
             <c:if test="${param.error eq 'bad_credentials'}">
                 <div class="alert alert-danger alert-dismissable">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <spring:message code="text.login.page.login.failed.error"/>
+					login failed!
                 </div>
             </c:if>
             <form action="/login/authenticate" method="POST" role="form">
@@ -33,19 +33,19 @@
 
                 <div class="row">
                     <div id="form-group-password" class="form-group col-lg-4">
-                        <label class="control-label" for="user-password"><spring:message code="label.user.password"/>:</label>
+                        <label class="control-label" for="user-password">password:</label>
                         <input id="user-password" name="password" type="password" class="form-control"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-4">
-                        <button type="submit" class="btn btn-default"><spring:message code="label.user.login.submit.button"/></button>
+                        <button type="submit" class="btn btn-default">submmit</button>
                     </div>
                 </div>
             </form>
             <div class="row">
                 <div class="form-group col-lg-4">
-                    <a href="/user/register"><spring:message code="label.navigation.registration.link"/></a>
+                    <a href="/user/register">reg link</a>
                 </div>
             </div>
         </div>
