@@ -16,7 +16,7 @@ import java.util.EnumSet;
 public class LBLApplicationConfig implements WebApplicationInitializer {
 
 	private static final String DISPATCHER_SERVLET_NAME = "dispatcher";
-    private static final String DISPATCHER_SERVLET_MAPPING = "/";
+    private static final String DISPATCHER_SERVLET_MAPPING = "/*";
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
